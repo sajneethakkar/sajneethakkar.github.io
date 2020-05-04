@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+@import url("https://use.typekit.net/ejw1vhb.css");
+@import url("https://use.typekit.net/hwp6rle.css");
+
+h2{
+  font-family: copal-std-solid, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  text-align: left;
+  position: absolute;
+  top: 5%; 
+  right: 9%;
+}
+
+div{
+	max-height: 100vh;
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+#image{
+	width: 100vw;
+	position: absolute;
+	bottom: 0;
+  left: 0;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 60px; 
+  position: fixed; 
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sidenav img{
+  max-width: 40px;
+  height: auto;
+  padding: 10px; 
+  display:block;
+}
+
+.widenav {
+  height: 100%; 
+  width: 180px; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 25px;
+  padding-left: 60px;
+}
+
+.widenav button{
+  font-size: 20px;
+  display:block;
+  color: white;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: #BF391B;
+  display:block;
+  border-style: none;
+  font-family: athelas,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+}
+

@@ -1,84 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
-.hg__header { grid-area: menu; }
-.hg__header { grid-area: header; }
-.hg__footer { grid-area: footer; }
-.hg__main { grid-area: main; }
-
-.hg {
-	display: grid;
-	grid-template-areas: "menu"
-						           "header"
-	                     "main"
-	                     "footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 45px
-						100px 
-						1fr
-						50px;
-	min-height: 100vh;
-	font-family: 'Playfair Display', serif;
-}
-
-body{
-	text-align:center;
-  margin:0;
-}
-
-p{
-  font-family: 'Source Sans Pro', sans-serif;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  text-align: left;
-  font-size:24px;
-  margin-bottom: 0;
-}
-
-h1{
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: #047084;
-  color: white;
-  font-size: 34px;
-}
-
-h2{
-  font-family: 'Playfair Display', serif;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 0px;
-  background-color: #009ab9;
-  color: white;
-  font-size: 28px;
-}
-
-h3{
-  font-family: 'Source Sans Pro', sans-serif;
-  padding-left: 45px;
-  padding-right: 45px;
-  font-size: 22px;
-}
-
-@media screen and (max-width: 600px) {
-	.hg {
-		grid-template-areas: "menu"
-						          	 "header"
-		                     "main"
-		                     "footer";
-		grid-template-columns: 100%;
-		grid-template-rows: 45px
-							100px 
-							1fr 
-							50px;
-	}
-}
-
 li {
 	padding: 6px;
 	margin-left: 15vw;
@@ -106,25 +27,6 @@ div#menu{
   margin-right: 5%;
 }
 
-div#questions{
-  display: inline-block;
-  width: 50%;
-  height: 200px;
-  margin: 0; 
-  font-size: 16px;
-  background-color: #d1eff5;
-}
-
-form{
-  margin-top: 20px;
-}
-
-div#story{
-  display: inline-block;
-  width: 50%;
-  height: auto;
-  font-size: 30px;
-}
 
 b {
   font-family: 'Playfair Display', serif;
@@ -140,23 +42,6 @@ b:hover {
   opacity: .6;
 }
 
-input[type=submit] {
-  background-color: #009ab9;
-  font-family: 'Playfair Display', serif;
-  border-style: none;
-  color: white;
-  text-align: center;
-  padding: .5rem; 
-  width: 20rem;
-  margin: 1rem;
-  font-size: 16px;
-}
-
-.hg__main { 
-	background-color: white;
-	color: #023A40;
-  font-size: 0;
-}
 
 .hg__header {
   background-color: #023A40;
@@ -220,17 +105,3 @@ button {
   overflow: hidden;
 }
 
-h5{
-  background-color: #d1eff5;
-  color: #023A40;
-  padding: 24px;
-  margin: 0px;
-  font-size: 16px;
-}
-
-h6{
-	background-color: #023A40;
-	color: #023A40;
-	padding: 24px;
-	margin-bottom: 0px;
-}
