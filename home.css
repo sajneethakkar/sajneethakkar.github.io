@@ -49,9 +49,11 @@ body{
 
 #image{
 	width: 100vw;
+  height: auto;
 	position: absolute;
 	bottom: 0;
   left: 0;
+  overflow: hidden; 
 }
 
 .sidenav {
