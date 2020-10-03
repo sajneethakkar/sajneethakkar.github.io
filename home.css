@@ -22,7 +22,7 @@ h2{
   text-align: left;
   position: absolute;
   top: 19%; 
-  right: 9%;
+  right: 3%;
   color: #3C3D00;
 }
 
@@ -44,7 +44,7 @@ h3{
 }
 
 body{
-  background-color: #F2DFEB;
+  background-color: white;
 }
 
 #image{
@@ -191,7 +191,7 @@ h5{
   font-size: 16px;
 }
 
-li {
+p {
   padding: 6px;
   margin-left: 15vw;
   margin-right: 15vw;
