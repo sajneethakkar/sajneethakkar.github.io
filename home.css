@@ -121,7 +121,6 @@ a{
 }
 
 #aboutmetext{
-  color: #3C3D00;
   font-family: athelas, serif;
   font-weight: 400;
   font-style: normal;
@@ -219,4 +218,32 @@ h6{
   text-align: center;
   margin: 8px;
 }
+
+#info{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+}
+
+#infoimg {
+  margin-top: 12px; 
+  margin-right: auto; 
+  padding-left: 120px;
+  padding-bottom: 12px;
+  width: 30vw;
+  height: auto;
+}
+
+#infotext{
+  font-family: athelas, serif;
+  font-style: normal;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 15px;
+  text-align: left;
+  font-family: athelas, serif;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
 

@@ -35,13 +35,41 @@
 	</div>	
   <div>
     <h1>This page catalogues some of my most recent passion projects. Some of them are deeper explorations of class projects I really enjoyed and others are the result of trying out new skills.</h1>
-    <p>I am currently in the process of building a portfolio website for my sister to house her photography and poetry. The basic style is much the same as this website, but her ideas inspired me to get a little bit early aughts with the design element. If you hover over her name, the visual inverse of the screen will be subbed in until you move away from her name. I have since borrowed this idea for my own website, but instead of using the inverse of my hero image, I’ve instead used a version of the image that I doodled as the double.</p>
-    <p> This was my final project for a Computer Vision class that I took. I decided that given that I wasn’t able to have an in person graduation due to COVID, I wanted to be able to put a grad hat on whatever photo I chose. Instead of just using Photoshop, this program finds your face and then uses the slant of the line between your eyes to angle a grad hat on top of your head. You even have the option of inputting RGB values to change the color of the hat, otherwise it’ll just give you one that honors my university. As with a lot of computer vision projects, certain types of photos will result in poor face detection in which case the program will ask you to try again. </p>
-    <p>Again, a project taken on in a world with an ongoing pandemic, this project helps you dream of traveling once again. Simple app design is usually quite standard and relies heavily on buttons and displaying data or recording it, and I’m quite familiar with that so I wanted to try something new this time, perhaps working with graphics. This app allows you to spin a globe and see where your finger lands as a means of choosing your next vacation destination. It also allows you to see the view out of your plane window aboard the flight to your destination by spinning two globes at once - the actual map one and one that has different stages of the sun painted onto it. This was great fun because I had to work within interesting constraints and because photo manipulation in Swift is so dramatically different from how you would approach the same request in Python. </p>
-    <p>More pandemic boredom led to making a python program that can check whether you properly solved a sudoku puzzle. The program provides you with a few puzzle options or allows you to input one with blanks yourself. Easy enough to check a sudoku puzzle by eye, but this was fun to make and forced me to consider how to most efficiently manipulate matrices. </p>
-    <p>I really enjoyed the database class that I took in college, but I recently saw someone sifting through tweets and I thought that was a call use of SQL and Python and a few tutorials later, I was able to put together a program that reads through Elon Musk’s tweets and searches for everyone that he has ever mentioned in the body of his tweets. I wasn’t able to pull directly from Twitter using Python, so this code uses a CSV file I was able to download with all the metadata of his tweets circa 2019. </p>
-    <p>Another small computer vision based project is this one where I took the input from my laptop’s webcam and manipulated the image in intriguing ways. I was able to recreate those sketch portraits you used to get at arcades when you were little as well as a colored-in version of those. But my favorite effect was finding out that by writing a loop that would rotate the image a few degrees at a time I could make it look like I was disappearing into a spiral. </p>
-    <p>An interesting mix of design and code, I once designed my own fonts to use in an intro to web development class. The idea is basically drawing out your font and then converting it into a TIFF file that you can then attach to your CSS file and thus use on a website. This skill also came in handy as the basis for a birthday gift for a friend who loves stationery and fonts.</p>
+    <div id='info'>
+    <img id='infoimg' src="saheli.gif" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 10px;" >I am currently in the process of building a portfolio website for my sister to house her photography and poetry. The basic style is much the same as this website, but her ideas inspired me to get a little bit early aughts with the design element. If you hover over her name, the visual inverse of the screen will be subbed in until you move away from her name. I have since borrowed this idea for my own website, but instead of using the inverse of my hero image, I’ve instead used a version of the image that I doodled as the double.</h1>
+    </div> 
+
+    <div id='info'>
+    <img id='infoimg' src="final.jpg" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 35px;" >This was my final project for a Computer Vision class that I took. I decided that given that I wasn’t able to have an in person graduation due to COVID, I wanted to be able to put a grad hat on whatever photo I chose. Instead of just using Photoshop, this program finds your face and then uses the slant of the line between your eyes to angle a grad hat on top of your head. You even have the option of inputting RGB values to change the color of the hat, otherwise it’ll just give you one that honors my university. As with a lot of computer vision projects, certain types of photos will result in poor face detection in which case the program will ask you to try again.</h1>
+    </div>  
+  
+    <div id='info'>
+    <img id='infoimg' src="app.png" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 35px;" >Again, a project taken on in a world with an ongoing pandemic, this project helps you dream of traveling once again. Simple app design is usually quite standard and relies heavily on buttons and displaying data or recording it, and I’m quite familiar with that so I wanted to try something new this time, perhaps working with graphics. This app allows you to spin a globe and see where your finger lands as a means of choosing your next vacation destination. It also allows you to see the view out of your plane window aboard the flight to your destination by spinning two globes at once - the actual map one and one that has different stages of the sun painted onto it. This was great fun because I had to work within interesting constraints and because photo manipulation in Swift is so dramatically different from how you would approach the same request in Python.</h1>
+    </div> 
+
+    <div id='info'>
+    <img id='infoimg' src="sudoku.png" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 35px;" >More pandemic boredom led to making a python program that can check whether you properly solved a sudoku puzzle. The program provides you with a few puzzle options or allows you to input one with blanks yourself. Easy enough to check a sudoku puzzle by eye, but this was fun to make and forced me to consider how to most efficiently manipulate matrices.</h1>
+    </div>
+
+    <div id='info'>
+    <img id='infoimg' src="DayTwentyOneChart.png" alt="a picture of me" style="padding-top: 50px;">
+      <h1 id='infotext'>I really enjoyed the database class that I took in college, but I recently saw someone sifting through tweets and I thought that was a call use of SQL and Python and a few tutorials later, I was able to put together a program that reads through Elon Musk’s tweets and searches for everyone that he has ever mentioned in the body of his tweets. I wasn’t able to pull directly from Twitter using Python, so this code uses a CSV file I was able to download with all the metadata of his tweets circa 2019.</h1>
+    </div>
+
+    <div id='info'>
+    <img id='infoimg' src="lab11_rotate.png" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 25px;" >Another small computer vision based project is this one where I took the input from my laptop’s webcam and manipulated the image in intriguing ways. I was able to recreate those sketch portraits you used to get at arcades when you were little as well as a colored-in version of those. But my favorite effect was finding out that by writing a loop that would rotate the image a few degrees at a time I could make it look like I was disappearing into a spiral.</h1>
+    </div>
+
+    <div id='info'>
+    <img id='infoimg' src="font.png" alt="a picture of me">
+      <h1 id='infotext' style="padding-top: 35px;">An interesting mix of design and code, I once designed my own fonts to use in an intro to web development class. The idea is basically drawing out your font and then converting it into a TIFF file that you can then attach to your CSS file and thus use on a website. This skill also came in handy as the basis for a birthday gift for a friend who loves stationery and fonts.</h1>
+    </div>
+
     <h1 style="padding-top: 0;">The following are even older projects that I am still proud of but lack the the detailed documentation of more recent projects. If you would like to hear more about any of them, do feel free to reach out.</h1>
     <br>
     <div class="picture-holder">
@@ -73,7 +101,7 @@
         <li>
           <a>
           <img src="weather.jpg" alt="weather app" style="width: 20rem;">
-          <button style="font-size: 16px;">Used Java and Swift to build an iPhone app that makes recommendations by learning the user’s habits</button>
+          <button style="font-size: 16px;">Built an app that makes outfit recommendations based on the user’s habits</button>
           </a>
         </li>
         <li>
