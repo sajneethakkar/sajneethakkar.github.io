@@ -14,7 +14,7 @@
 			..
 		</h1> -->
 		<h2>
-			<span style="font-size: 80px">T h e</span> I n q u i s i t i v e <span style="font-size: 80px">G a l l e r y</span>
+			<span style="font-size: 80px">T&nbsp;h&nbsp;e</span> I&nbsp;n&nbsp;q&nbsp;u&nbsp;i&nbsp;s&nbsp;i&nbsp;t&nbsp;i&nbsp;v&nbsp;e <span style="font-size: 80px">G&nbsp;a&nbsp;l&nbsp;l&nbsp;e&nbsp;r&nbsp;y</span>
 		</h2>
 <!-- 		<h1>
 			..
@@ -34,30 +34,44 @@
 			<img src="four.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="2.png" class="gallery_img">
+			<img src="five.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="1.png" class="gallery_img">
+  			<div id="backdrop" style="z-index: 1; position: absolute; padding-top: 5vh;"> <video id="player" autoplay muted class="gallery_img"> </video> </div>
+  			<div id="curtain" style="z-index: 2; position: absolute;"> <img src="frame.png" class="gallery_img"> </div>
 		</div>
 		<div>
-			<img src="3.png" class="gallery_img">
+			<img src="six.png" class="gallery_img">
 		</div>  
 		<div>
-			<img src="2.png" class="gallery_img">
+			<img src="seven.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="1.png" class="gallery_img">
+			<img src="12.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="3.png" class="gallery_img">
+			<img src="32.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="4.png" class="gallery_img">
+			<img src="42.png" class="gallery_img">
 		</div>  
 		<div>
-			<img src="3.png" class="gallery_img">
+			<img src="12.png" class="gallery_img">
 		</div> 
 	</div>
+	<script>
+  		const player = document.getElementById('player');
+
+  		const constraints = {
+    		video: true,
+  		};
+
+  		navigator.mediaDevices.getUserMedia(constraints)
+    		.then((stream) => {
+      		// Attach the video stream to the video element and autoplay.
+      		player.srcObject = stream;
+    	});
+	</script>
 	<div>
 		<h3>
 			all works by Sajnee Thakkar, contact to purchase
