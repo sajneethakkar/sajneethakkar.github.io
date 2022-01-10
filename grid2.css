@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-  background-color: #E6E0C8;
+  background-color: #d2c5bc;
   margin: 0; 
 }
 
-h1 {
-  background-color: #830E26;
-  color: #830E26;
-  font-size: 2px;
-  margin-top: 16px;
-}
 
 h2 {
   color: black;
@@ -22,7 +16,7 @@ h2 {
 
 h3 {
   background-color: black;
-  color: #E6E0C8;
+  color: #d2c5bc;
   font-size: 24px;
   text-align: center;
   margin-bottom: 0;
@@ -33,7 +27,7 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
-  background-color: #E6E0C8;
+  background-color: #d2c5bc;
   padding-left: 5vw;
   padding-right: 5vw;
 }
