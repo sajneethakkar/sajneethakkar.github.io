@@ -60,24 +60,39 @@
 			<img src="fourteen.png" class="gallery_img">
 		</div>
 		<div>
-			<img src="fifteen.png" class="gallery_img">
+			<img id="sizeReference" src="fifteen.png" class="gallery_img">
 		</div>  
 		<div>
-			<img src="sixteen.png" class="gallery_img">
+			<div style="z-index: 3; position: absolute;" class="gallery_img"> 
+				<canvas id="canvas" class="gallery_img"></canvas>
+			</div>
+   			<div id = 'frame' style="z-index: 4; position: absolute; display: none;"> <img src="sixteen.png" class="gallery_img"> </div>
 		</div> 
+		<button id="click-photo" style="display: none;">Click Photo</button>
 	</div>
 	<script>
-  		const player = document.getElementById('player');
+		let video = document.querySelector("#video");
+		let player = document.querySelector("#player");
+		let click_button = document.querySelector("#click-photo");
+		let canvas = document.querySelector("#canvas");
+		let frame = document.querySelector("#frame");
+		let sizeReference = document.querySelector("#sizeReference");
+		var newHeight = sizeReference.height;
+		canvas.height = parseInt(newHeight);
 
-  		const constraints = {
-    		video: true,
-  		};
-
-  		navigator.mediaDevices.getUserMedia(constraints)
+		navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     		.then((stream) => {
-      		// Attach the video stream to the video element and autoplay.
-      		player.srcObject = stream;
-    	});
+				player.srcObject = stream;
+				click_button.style.display = 'block';
+			});
+
+		click_button.addEventListener('click', function() {
+   			canvas.getContext('2d').drawImage(player, 0, 0, canvas.width, canvas.height);
+   			player.srcObject.getVideoTracks().forEach(track => track.stop());
+   			frame.style.display = 'block';
+   			click_button.style.display = 'none';
+   		});
+
 	</script>
 	<div>
 		<h3>
