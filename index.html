@@ -66,14 +66,12 @@
 			<div style="z-index: 3; position: absolute;" class="gallery_img"> 
 				<canvas id="canvas" class="gallery_img"></canvas>
 			</div>
-   			<div id = 'frame' style="z-index: 4; position: absolute; display: none;"> <img src="sixteen.png" class="gallery_img"> </div>
+   			<div id = 'frame' style="z-index: 4; position: absolute; display: block;"> <img src="sixteen.png" class="gallery_img"> </div>
 		</div> 	
-		<button id="click-photo" style="display: none;">Click Photo</button>
 	</div>
 	<script>
 		let video = document.querySelector("#video");
 		let player = document.querySelector("#player");
-		let click_button = document.querySelector("#click-photo");
 		let canvas = document.querySelector("#canvas");
 		let frame = document.querySelector("#frame");
 		let sizeReference = document.querySelector("#sizeReference");
@@ -86,11 +84,9 @@
 				click_button.style.display = 'block';
 			});
 
-		click_button.addEventListener('click', function() {
+		frame.addEventListener("mouseover", function() {
    			canvas.getContext('2d').drawImage(player, 0, 0, canvas.width, canvas.height);
    			player.srcObject.getVideoTracks().forEach(track => track.stop());
-   			frame.style.display = 'block';
-   			click_button.style.display = 'none';
    		});
 	</script>
 	<div>
